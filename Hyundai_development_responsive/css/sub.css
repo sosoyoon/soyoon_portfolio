@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; vertical-align: top; }
+li { list-style: none; }
+a { text-decoration: none; color: #000 }
+img { border: 0; max-width: 100%; }
+body { font-family: 'Noto Sans KR', sans-serif; }
+
+#accordion { width: 250px; height: 550px; background: #ebebeb; position: absolute; top: 70px; left: -100%; z-index: 999999; }
+#accordion h3 { width: 100%; height: 40px; line-height: 40px; text-indent: 20px; font-weight: normal; border-bottom: 1px solid #FFF; background: #535658; }
+#accordion h3 a { display: block; font-size: 14px; color: #FFF; }
+
+#accordion div { width: 100%; }
+#accordion div ul li { width: 100%; height: 30px; line-height: 30px; text-indent: 30px; border-bottom: 1px solid #FFF; background: #d7d7d7; }
+#accordion div ul li a { display: block; font-size: 12px; color: #535658; }
+#accordion div ul a:hover { color: #e71a11;; background: #FFF; }
+
+#accordion_bg { display: none; width: 100%; height: 550px; background: rgba(0, 0, 0, 0.5); position: absolute; top: 70px; left: 0; z-index: 777; }
+
+
+header { width: 100%; position: relative; background: #FFF; }
+#top { width: 1440px; height: 80px; margin:0 auto; position: relative; }
+#logo { position: absolute; top: 29.6px; left: 0; }
+#logo img { width: 80%; }
+#m_btn { display: none; }
+nav { position: absolute; top: 0; right: 50px; }
+nav > ul > li { position: relative; float: left; height: 80px; }
+nav > ul > li > a { display: block; font-size: 19px; font-weight: 600;  line-height: 80px; letter-spacing: -2px; padding: 0 30px; color: #000; }
+nav > ul > li > ul { position: absolute; top: 80px; left: 0; z-index: 555555; }
+nav > ul > li > ul > li { display: none; width: 160px; height: 40px; line-height: 40px; text-align: center; background: #e71a11; }
+nav > ul > li > ul > li > a { display: block; font-size: 14px; font-weight: 300; letter-spacing: -1px; color: #FFF; }
+nav > ul > li > ul > li > a:hover { color: #e71a11; background: #FCFCFC; }
+#nav_bg { display: none; width: 100%; height: 320px; position: absolute; top:80px; left: 0; background: #FFF; }
+/*------------------------------#header------------------------------*/
+#main { height: 360px; background: url('../images/main_sub.jpg') no-repeat 50% 0; position: relative; }
+#main_wrap { width: 1440px; height: 360px; margin: 0 auto;  }
+#main_textbox { position: absolute; top: 100px; left: 50%; margin-left: -133.19px; }
+.main_title { font-size: 21px; font-weight: 500; text-align: center; letter-spacing: -2px; color: #FFF; }
+.main_article { font-size: 40px; font-weight: 500; text-align: center; letter-spacing: -2px; color: #FFF; }
+#main_title_line { width: 105px; height: 1px; background: #FFF; margin: 5px auto 10px auto;  } 
+#main_route { margin: 10px auto; overflow: hidden; padding: 0 50px; }
+.route_icon { float: left; letter-spacing: -2px; margin-right: 3px; }
+.route { float: left; font-size: 18px; font-weight: 200; letter-spacing: -2px; color: #FFF; line-height: 20px; margin-right: 5px; }
+/*------------------------------#main------------------------------*/
+
+#business_nav { width: 1440px; position: absolute; bottom: -30px; left: 50%; margin-left: -720px; }
+#business_nav ul { overflow: hidden }
+#business_nav ul li { float: left; width: 16.6%; height: 60px; line-height: 60px; text-align: center; background: #363636; }
+#business_nav ul li:first-child { width: 17%; background: #FFF; }
+#business_nav ul li a { display: block; font-size: 18px; color: #FFF;}
+#business_nav ul li:first-child a{ color: red; }
+#business_nav ul li a:hover { color: red; background: #FFF; }
+/*------------------------------#business_nav------------------------------*/
+
+#contents { width: 100%; margin-top: 150px; background: #FFF; }
+#textbox { width: 1440px; margin: 0 auto; margin-bottom: 50px; text-align: center; }
+.textbox_title { font-size: 40px; font-weight: 500; letter-spacing: -3px; color: #363636; }
+.textbox_article { font-size: 24px; font-weight: 100; letter-spacing: -2px; color: #999999; }
+
+#complex { width: 100%; }
+#complex_titlebox { width: 164px; margin: 0 auto; padding: 75px 0 50px 0; border-top: 5px solid #ff0000; }
+#complex_box { width: 100%; padding-bottom: 120px; background: url('../images/complex_bg.gif') no-repeat 50% 100%; }
+#complex_wrap { width: 1440px; margin: 0 auto; overflow: hidden; }
+#complex_left { float: left; width: 50%; height: 681px; background: url('../images/complex1.jpg') no-repeat 50% 50%; }
+#complex_right { float: right; width: 50%; }
+#complex_right_img { padding: 100px 0 100px 0; text-align: center; }
+#complex_textbox { padding: 0 50px; }
+.contents_article span { display: inline-block; width: 440px; text-align: center; }
+/*------------------------------#complex------------------------------*/
+
+#urban { width: 1440px; margin: 0 auto; margin-top: 150px; }
+.contents_titlebox { width: 1440px; padding: 75px 0 50px 0; border-top: 1px solid #e71a11; }
+.contents_title { font-size: 24px; font-weight: 500; text-align: center; letter-spacing: -2px; color: #363636; }
+#urban_top { margin-bottom: 46px; height: 430px; background: url('../images/urban1.jpg') no-repeat; }
+#urban_bottom { overflow: hidden; }
+#urban_left { float: left; }
+#urban_left_text { width: 725px; }
+#urban_left_img { margin-bottom: 120px; width: 725px; height: 323px; background: url('../images/urban2.jpg') no-repeat; }
+#urban_right { float: right; width: 669px; height: 694px; background: url('../images/urban3.jpg') no-repeat; }
+/*------------------------------#urban------------------------------*/
+
+#apt { width: 1440px; margin: 0 auto; margin-top: 150px; }
+#apt_img { overflow: hidden; margin-bottom: 50px; }
+#apt_img_1 { float: left; width: 697px; height: 321px; background: url('../images/apt1.jpg') no-repeat; }
+#apt_img_2 { float: right; width: 697px; height: 321px; background: url('../images/apt2.jpg') no-repeat; }
+.apt_textbox { width: 100%; padding: 0 85px; }
+.apt_text { font-size: 16px; font-weight: 100; text-align: left; color: #333333; }
+
+.contents_article { font-size: 22px; font-weight: 500; text-align: center; margin-bottom: 20px; color: #595959; }
+.contents_text { font-size: 16px; font-weight: 100; text-align: center; color: #333333; }
+/*------------------------------#apt------------------------------*/
+
+footer{ width: 100%; margin-top: 150px; }
+#footer_top { width: 100%; background: #f4f4f4; }
+#footer_wrap { width: 1440px; padding: 20px 0;overflow: hidden; margin: 0 auto; }
+#footer_logo { float: left; padding: 30px 5px; margin-right: 15px; }
+#footer_text { float: left; }
+#footer_text ul { width: 100%; overflow: hidden; padding-top: 20px; }
+#footer_text ul li { float: left; padding: 0 10px; height: 16px; line-height: 16px; background: url('../images/footerline.jpg') no-repeat 100% 70%; margin-bottom: 10px; }
+#footer_text ul li:last-child { background: none; }
+#footer_text ul li a { font-size: 16px; letter-spacing: -2px; color: #2d2d2d; }
+#footer_text ul li:first-child a { color: red; }
+.footer_address { font-size: 14px; font-weight: 200; letter-spacing: -1px; color: #3f3f3f; text-indent: 10px; }
+.footer_address_m { display: none; }
+#footer_sns { float: right; overflow: hidden; }
+#youtube, #instagram, #facebook { float: left; padding: 27px 5px; }
+
+#footer_btm { width: 100%; font-size: 14px; font-weight: 200; color: #FFF; text-align: center; padding: 15px 0; background: #2d2d2d; }
+
+@media screen and ( max-width: 1440px ) {
+	#top { width: 95%; }
+	
+	#main_wrap { width: 95%; }
+	.main_title { font-size: 20px; }
+	.main_article { font-size: 39px; }
+	
+	#business_nav { width: 100%; bottom: -25px; left: 0; margin-left: 0; }
+	#business_nav ul li a { font-size: 17px; }
+	
+	.textbox { width: 95%; }
+	.textbox_title { font-size: 39px; }
+	.textbox_article { font-size: 23px; }
+	
+	.contents_title { font-size: 23px; }
+	
+	#contents_textbox { width: 95%; }
+	
+	#complex_wrap { width: 95%; }
+	#complex_right { width: 50%; box-sizing: border-box; }
+	
+	.contents_titlebox { width: 95%; }
+	#urban { width: 95%; }
+	#urban_left { width: 53%; margin-right: 3% }
+	#urban_left_img { width: 100%;  margin-bottom: 100px; }
+	#urban_left_text { width: 100%; }
+	#urban_right { width: 44%; }
+	#textbox { width: 95%; }
+	
+	
+	#apt { width: 95%; }
+	#apt_img_1 { width: 49%; margin-right: 2%; }
+	#apt_img_2 { width: 49%; }
+	
+	#footer_wrap { width: 95%; }
+}
+
+@media screen and ( max-width: 1280px ) {
+	#main { height: 320px; }
+	#main_textbox { top: 80px; margin-left: -130.42px; }
+	.main_article { font-size: 38px; }	
+	.route { font-size: 17px; }
+	
+	.textbox_title { font-size: 38px; }
+	.textbox_article { font-size: 22px; }
+	
+	.contents_article { font-size: 21px; }
+	.contents_text { font-size: 15px; }
+	
+	.contents_article span { width: 420px; }
+	
+	.apt_text { font-size: 15px; }
+	
+	#footer_logo { width: 25%; margin-right: 0; box-sizing: border-box; }
+	#footer_text { width: 60%; }
+	#footer_text ul li a { font-size: 15px; }
+	#footer_sns { width: 15%; box-sizing: border-box; }
+	#youtube, #instagram, #facebook { box-sizing: border-box; }
+}
+
+@media screen and ( max-width: 1024px ) {
+	#top { height: 70px; }
+	#logo { top: 24.6px; left: 0; }
+	nav { display: none; }
+	nav > ul > li { height: 70px; line-height: 70px; }
+	#m_btn { display: block; position: absolute; top: 28.5px; right: 0; }
+	
+	.main_article { font-size: 37px; }	
+	
+	#business_nav { bottom: -20px; left: 0; }		
+	#business_nav ul li { height: 45px; line-height: 45px; }
+	#business_nav ul li a { font-size: 16px; }
+	
+	.textbox_title { font-size: 37px; }
+	.textbox_article { font-size: 21px; }
+	
+	#complex_right_img { padding: 60px 0 60px 0; }
+	.contents_article span { width: 100%; }	
+
+	#urban_left_img { margin-bottom: 80px; }
+	
+	#footer_logo { display: none; }
+	#footer_text { width: 82%; }
+	#footer_text ul { padding-top: 0; }
+	#footer_text ul li:first-child { padding-left: 0; }
+	#footer_text ul li a { font-size: 15px; }
+	.footer_address { text-indent: 0; }
+	#footer_sns { width: 18%; padding-top: 10px;box-sizing: border-box; }
+	#youtube, #instagram, #facebook { padding: 0 5px; }
+	#footer_btm { text-align: left; text-indent: 25px; font-weight: 100; letter-spacing: -1px; }
+}
+
+@media screen and ( max-width: 800px ) {
+	#main { height: 300px; }
+	#main_textbox { top: 70px; margin-left: -127.67px; }
+	.main_title { font-size: 19px; }
+	.main_article { font-size: 36px; }	
+	.route { font-size: 16px; }
+	
+	.textbox_title { font-size: 36px; }
+	.textbox_article { font-size: 20px; }
+	
+	#contents { margin-top: 100px;}
+	.contents_article { font-size: 20px; margin-bottom: 5px; }
+	.contents_text { font-size: 14px; }
+	
+	#complex_box { background: none; padding: 0; }
+	#complex_left { width: 100%; background: url('../images/complex1.jpg') no-repeat 100% 55%; background-size: 100%; height: 250px; margin-bottom: 10px; }
+	#complex_right { width: 100%; overflow: hidden; }
+	#complex_right_img { padding: 0; margin-bottom: 20px; }
+	#complex_textbox { float: right; width: 100%; padding: 0 5px; box-sizing: border-box; }
+	
+	#urban { margin-top: 100px; }
+	#urban_top { height: 300px; margin-bottom: 10px; background: url('../images/urban1.jpg') no-repeat 50% 50%; }
+	#urban_left { width: 100%; }
+	#urban_left_img { background-size: 760px; width: 100%; height: 226px; margin-bottom: 20px; }
+	#urban_right{ display: none; }
+	
+	#apt { margin-top: 100px; }
+	#apt_img { margin-bottom: 20px; }
+	#apt_img_1 { width: 100%; background-size: 100%; margin-bottom: 10px; }
+	#apt_img_2 { width: 100%; background-size: 100%; }
+	.apt_text { font-size: 14px; }
+	
+	footer{ margin-top: 100px; }
+	#footer_text ul li { padding: 0 5px; }
+	#footer_text ul li a { font-size: 14px; }
+	#youtube, #instagram, #facebook { padding: 0; }
+	#youtube img, #instagram img, #facebook img { width: 80%; }
+	#footer_btm_wrap { width: 95%; margin: 0 auto; }
+	#footer_btm { text-indent: 0; }
+}
+
+@media screen and ( max-width: 600px ) {
+	.main_title { font-size: 18px; }
+	.main_article { font-size: 35px; }
+	
+	#business_nav ul li a { font-size: 15px; }
+		
+	.textbox_title { font-size: 35px; }
+	.textbox_article { font-size: 19px; }	
+	
+	#apt_img_1 { height: 200px; }
+	#apt_img_2 { height: 200px; }
+	
+	#footer_text { width: 100%; }
+	#footer_text ul li { padding: 0 8px; background: none; }
+	#footer_text ul li:nth-child(3) { float: none; }
+	#footer_text ul li:nth-child(4) { padding-left: 0; }
+	#footer_sns { float: left; width: 100%; }
+	.footer_address{ display: none; }
+	.footer_address_m { display: block; font-size: 14px; font-weight: 200; letter-spacing: -1px; color: #3f3f3f; }
+}
+
+@media screen and ( max-width: 480px ) {
+	#main { height: 280px; }
+	#main_textbox { top: 60px; margin-left: -124.9px; }
+	.main_title { font-size: 17px; }
+	.main_article { font-size: 34px; }
+	.route { font-size: 15px; }
+	
+	.textbox_title { font-size: 34px; }
+	.textbox_article { font-size: 18px; }
+	
+	.contents_article { font-size: 19px; }
+	.contents_text { font-size: 13px; }
+	
+	#apt_img_1 { height: 150px; }
+	#apt_img_2 { height: 150px; }
+	.apt_text { font-size: 13px; }
+}
